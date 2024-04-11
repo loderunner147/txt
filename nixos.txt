@@ -1,0 +1,22 @@
+Bleeding Edge Channel:
+sudo nix-channel --add https://channels.nixos.org/nixos-unstable nixos
+
+Update:
+sudo nixos-rebuild switch --upgrade
+
+After Update:
+sudo nixos-rebuild switch
+
+Automatic Upgrades:
+system.autoUpgrade.enable = true;
+system.autoUpgrade.allowReboot = true;
+into configuration.nix
+
+Install Packages:
+sudo nano /etc/nixos/configuration.nix/
+environment.systemPackages = with pkgs;
+nixos-rebuild switch
+
+Time
+time.hardwareClockInLocalTime = true;
+into configuration.nix

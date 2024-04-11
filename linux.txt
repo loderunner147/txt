@@ -1,0 +1,21 @@
+# Extract:
+
+tar -xvf archive.tar.gz
+
+# Time:
+
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+
+# Ru Lang
+
+.xinitrc
+.xsession
+
+setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+
+# Xgamma Gnome
+sudo nvim /etc/gdm/Xsession => exec .config/autostart/autostart.sh &
+
+Mounting Error
+sudo dmesg
+sudo ntfsfix -d /dev/sda5

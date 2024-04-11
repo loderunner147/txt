@@ -1,0 +1,17 @@
+qtile
+qtile-extras
+alacritty
+kitty
+thunar
+rofi
+nitrogen
+feh
+lxappearance
+neofetch
+rxfetch
+neovim
+vim
+helix
+lite-xl
+sublime-text
+arcolinux-logout

@@ -1,0 +1,20 @@
+archinstall can be used to install Arch alongside an existing Windows installation.
+Below are the necessary steps:
+
+After the Windows installation make sure there is some unallocated space for a Linux installation available
+Boot into the ISO and runarchinstall
+
+Select Disk configuration -> Manual partitioning
+
+Select the disk on which Windows resides
+Chose Create a new partition
+
+Select a filesystem type
+Now the location of the new partition has to be specified as start and end sectors (values can be suffixed with various units)
+Assign mountpoint /
+
+Back in the partitioning menu, assign the Boot/ESP partition the mountpoint /boot
+
+This is all for the partitioning menu, select Confirm and exit to return to the main menu
+Set any additional settings you would like to have for the installation
+After completing the setup start the installation
